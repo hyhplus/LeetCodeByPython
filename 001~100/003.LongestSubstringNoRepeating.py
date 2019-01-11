@@ -41,8 +41,8 @@ class Solution(object):
 
 if __name__ == '__main__':
     _s = 'Longest Substring Without Repeating Characters'
-    s = 'test my string.'
-    result = Solution().lengthOfLongestSubstring(s)
+    s_ = 'test my string.'
+    result = Solution().lengthOfLongestSubstring(s_)
     print(result)
 
 

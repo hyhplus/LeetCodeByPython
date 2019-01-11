@@ -47,7 +47,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    nums1 = (1, 2, 3, 4)
-    nums2 = (1, 1)
+    nums1 = (1, 2, 4, 9)
+    nums2 = (1, 2, 4, 8)
     result = Solution().findMedianSortedArrays(nums1, nums2)
     print(result)
