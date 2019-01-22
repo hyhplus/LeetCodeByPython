@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+13、罗马数字转为整型数字
+"""
 
 
 class Solution:
     def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
         d = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
         res, p = 0, 'I'
         for c in s[::-1]:
@@ -43,7 +50,7 @@ if __name__ == '__main__':
 
     s1 = '123'
     for index in range(len(s1)):
-        current, next_ = s1[index], s1[index+1:index+2]
+        current, next_ = s1[index], s1[index+1:index+2]        # 字符串的索引可以越界，列表不行。
         print(current, next_)
         print('溢出？', s1[3:4])
 
