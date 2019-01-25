@@ -52,6 +52,6 @@ if __name__ == '__main__':
     for index in range(len(s1)):
         current, next_ = s1[index], s1[index+1:index+2]        # 字符串的索引可以越界，列表不行。
         print(current, next_)
-        print('溢出？', s1[3:4])
+        # print('溢出？', s1[3:4])
 
 

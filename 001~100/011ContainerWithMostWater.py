@@ -20,13 +20,14 @@ class Solution:
         #
         # return max_
 
-        # # 两点指针
+        # # 双指针法解1
         # res, l, r = 0, 0, len(height)-1
         # while l < r:
         #     h = min(height[l], height[r])
         #     res, l, r = max(res, h * (r - l)), l + (height[l] == h), r - (height[r] == h)
         # return res
 
+        # # 双指针法解2
         # max_area = 0,
         # left = 0,
         # right = len(height) - left,
@@ -40,7 +41,7 @@ class Solution:
         # return max_area
 
         """
-        方法二：分别从列表左右两端遍历（while），面积=短边*距离，哪边短遍历时+1，因为短的已达最大值。
+        方法二：双指针法(3)，分别从列表左右两端遍历（while），面积=短边*距离，哪边短遍历时+1，因为短的已达最大值。
         """
         max_area = 0
         i = 0

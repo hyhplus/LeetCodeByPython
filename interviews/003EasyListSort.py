@@ -10,7 +10,7 @@ def find_bigger_reserve(list1):
     for i in range(len(list1)):
         if list1[i] > 100:
             list2.append(list1[i])
-    # list2 = sorted(list2, reverse=True)
+    # or list2 = sorted(list2, reverse=True)
     list2.sort(reverse=True)
     return list2
 
