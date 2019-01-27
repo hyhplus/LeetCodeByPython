@@ -12,6 +12,7 @@ Q(n log n) 分而治之
 快速排序
 归并排序
 """
+import random
 
 
 def bubble(sl):
@@ -126,19 +127,31 @@ def insert_sort_for(items):
     return items
 
 
+# if __name__ == '__main__':
+#     my_sl = [1, 3, 23, 21, 12, 22, 234]
+#     result1 = bubble(my_sl)
+#     print(result1)
+#
+#     result2 = bubble_sorted(my_sl)
+#     print(result2)
+#
+#     result3 = select_sort(my_sl)
+#     print(result3)
+#
+#     my_s2 = [1, 3, 23, 21, 12, 22, 234]
+#     result5 = insert_sort_for(my_s2)
+#     print(result5)
+
+
+def main(size=10000, sort=select_sort):
+    my_items = []
+    for _ in range(size):
+        my_items.append(random.randint(1, _ + size))
+
+    print(my_items)
+    sort(my_items)
+    print(my_items)
+
+
 if __name__ == '__main__':
-    my_sl = [1, 3, 23, 21, 12, 22, 234]
-    result1 = bubble(my_sl)
-    print(result1)
-
-    result2 = bubble_sorted(my_sl)
-    print(result2)
-
-    result3 = select_sort(my_sl)
-    print(result3)
-
-    my_s2 = [1, 3, 23, 21, 12, 22, 234]
-    result5 = insert_sort_for(my_s2)
-    print(result5)
-
-
+    main()

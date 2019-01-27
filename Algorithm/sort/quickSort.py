@@ -5,6 +5,7 @@
 时间：最好 O(n log2n) ~ 最坏 O(n^2)
 空间：最好 O(log2n)   ~ 最坏 O(n)
 """
+import random
 
 
 def quick_sort(items):
@@ -36,4 +37,16 @@ def partition(items, left, right):
     return boundary
 
 
+def main(size=10000, sort=quick_sort):
+    my_items = []
+    for _ in range(size):
+        my_items.append(random.randint(1, _ + size))
+
+    print(my_items)
+    sort(my_items)
+    print(my_items)
+
+
+if __name__ == '__main__':
+    main()
 
