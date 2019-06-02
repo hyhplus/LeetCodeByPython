@@ -69,11 +69,3 @@ if __name__ == '__main__':
     min_search_res = binary_search(66, items2)
     print(min_search_res)
 
-
-
-
-
-
-
-
-
